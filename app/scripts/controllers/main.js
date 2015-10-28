@@ -8,10 +8,6 @@
  * Controller of the paintbrushApp
  */
 angular.module('paintbrushApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, current) {
+    $scope.current = current.query();
   });
