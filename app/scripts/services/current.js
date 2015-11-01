@@ -1,5 +1,5 @@
 'use strict';
-
+console.log("Hi");
 /**
  * @ngdoc service
  * @name paintbrushApp.current
@@ -13,13 +13,19 @@ angular.module('paintbrushApp')
     // ...
 
     // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/weather?q=:location&units=imperial&APPID=728520c2bdcdd7595dc15031af86d4d2', {}, {
+    return $resource('http://api.flickr.com/services/rest/', {}, {
       query: {
         method:'GET',
         params:{
-          location: 'Seattle,us'
+          method: 'flickr.photos.search',
+          api_key: 'af2e9eca76c375ff2ade6f2902acff31',
+          format: 'json',
+          title: ' ',
+          nojsoncallback: 1
         },
         isArray:false
       }
     });
   });
+
+  
