@@ -13,15 +13,14 @@ angular.module('paintbrushApp')
     // ...
 
     // Public API here
-    return $resource('http://api.flickr.com/services/rest/', {}, {
+    return $resource('https://api.flickr.com/services/rest/', {}, {
       query: {
         method:'GET',
         params:{
-          method: 'flickr.photos.search',
+          method: 'flickr.photos.getRecent',
           api_key: 'af2e9eca76c375ff2ade6f2902acff31',
           format: 'json',
           title: ' ',
-          nojsoncallback: 1
         },
         isArray:false
       }

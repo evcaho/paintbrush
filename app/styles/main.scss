@@ -89,3 +89,26 @@ body {
     border-bottom: 0;
   }
 }
+ul#images li {
+    width: 120px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+ul#images li img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+ul#images li button {
+    display: inline-block;
+}
+
+
+
+ul#images {
+    list-style-type: none;
+}
