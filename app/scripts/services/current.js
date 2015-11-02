@@ -17,13 +17,11 @@ angular.module('paintbrushApp')
       query: {
         method:'GET',
         params:{
-          method: 'flickr.photos.getRecent',
+          method: 'flickr.people.getPublicPhotos',
           api_key: 'af2e9eca76c375ff2ade6f2902acff31',
           format: 'json',
-          location: 'Seattle,US',
-          title: ''
+          nojsoncallback: 1,
         },
-        isArray:false
       }
     });
   });
