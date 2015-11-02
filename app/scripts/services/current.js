@@ -17,7 +17,7 @@ angular.module('paintbrushApp')
       query: {
         method:'GET',
         params:{
-          method: 'flickr.people.getPublicPhotos',
+          method: 'flickr.photos.getRecent',
           api_key: 'af2e9eca76c375ff2ade6f2902acff31',
           format: 'json',
           nojsoncallback: 1,
