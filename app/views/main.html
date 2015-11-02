@@ -10,10 +10,9 @@
         <p>
           <button class="btn btn-lg btn-primary" ng-click="refreshCurrent()">Get Flickr Images</button>
         </p>
-       <div>
+    <div>
       <ul>
-        <li ng-repeat = "photo in current.photos">
-          {{current.photo.title}} </li>
+        <li ng-repeat="photo in current.photos">{{photo.id}} </li>
       </ul>
     </div>
   </p>
