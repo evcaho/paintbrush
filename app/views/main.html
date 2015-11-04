@@ -4,15 +4,16 @@
     <div ng-init="location='Seattle'">
         <p>
           <label for="location">
-            <input type="text" name="location" ng-model="location">
+            <input type="text" name="title" ng-model="title">
           </label>
         </p>
         <p>
-          <button class="btn btn-lg btn-primary" ng-click="refreshCurrent()">Get Flickr Images</button>
+          <button class="btn btn-lg btn-primary" id="search" ng-click="refreshCurrent()">Get Flickr Images</button>
         </p>
     <div>
       <ul>
-        <li ng-repeat="photo in current.photos">{{photo.id}} </li>
+        <li ng-repeat="photo in current.photos.photo | limitTo:5">{{photo}}</li>
+        <img ng-src="{{photo}}" />
       </ul>
     </div>
   </p>
