@@ -19,8 +19,9 @@ angular.module('paintbrushApp')
         // params:{
         //   method: 'flickr.photos.getRecent',
         //   api_key: 'af2e9eca76c375ff2ade6f2902acff31',
-        //   title: 'Flickr',
+        //   text: location.search,
         //   format: 'json',
+        //   nojsoncallback: 1,
         // },
       }
     });

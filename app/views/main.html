@@ -12,7 +12,7 @@
         </p>
     <div>
       <ul>
-        <li ng-repeat="photo in current.photos.photo | limitTo:5">{{photo}}</li>
+        <li ng-repeat="photo in current.photos | limitTo:5">{{photo}}</li>
         <img ng-src="{{photo}}" />
       </ul>
     </div>
