@@ -11,10 +11,10 @@
           <button class="btn btn-lg btn-primary" id="search" ng-click="refreshCurrent()">Get Flickr Images</button>
         </p>
     <div>
+      {{current}}
       <ul>
-        <li ng-repeat="photo in current.photos | limitTo:5">{{photo}}</li>
-        <img ng-src="https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg" />
-       
+        <li ng-repeat="photo in current.photos | limitTo:5">{{photo.title[0].main}}</li>
+        <img ng-src="{{photo}}" />
       </ul>
     </div>
   </p>
