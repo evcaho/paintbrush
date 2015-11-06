@@ -13,7 +13,8 @@
     <div>
       <ul>
         <li ng-repeat="photo in current.photos | limitTo:5">{{photo}}</li>
-        <img ng-src="{{photo}}" />
+        <img ng-src="https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg" />
+       
       </ul>
     </div>
   </p>
