@@ -13,7 +13,7 @@ angular.module('paintbrushApp')
     
 
     // Public API here
-    return $resource('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=8629caf97218f887137af0b8b48345c1&tags=seattle&format=json&nojsoncallback=1&auth_token=72157660383692590-6d572e0f167ce194&api_sig=ecc30e46620f5ca6736363d79b775400', {}, {
+    return $resource('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=96660d90270c473673f87f092318c344&tags=seattle&format=json&nojsoncallback=1&auth_token=72157660101504498-3db77f6b8b516c58&api_sig=a1fc463de2be2e3cf81c21e104fc695f', {}, {
       query: {
         method:'GET',
         // params:{
