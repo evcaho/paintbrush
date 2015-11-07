@@ -9,10 +9,6 @@ console.log("Hi");
  */
 angular.module('paintbrushApp')
   .factory('current', function ($resource) {
-    // Service logic
-    
-
-    // Public API here
     return $resource(
       'https://api.flickr.com/services/rest/',  
       {

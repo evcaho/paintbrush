@@ -14,19 +14,6 @@ angular.module('paintbrushApp')
         $scope.current = current.get({
             text: $scope.title
         });
-
-        $scope.current.$promise.then(function(result) {
-        	$scope.current=result; 
-        });
-        console.log($scope.title);
-// $scope.result = [
-//     angular.fromJson(data.resultList[0]),
-//     angular.fromJson(data.resultList[1])
-// ];
-// alert($scope.result[0].codeName);
-// //         */ new function (scope parse json), scope create url
-// angular.fromJson(json);     
-    
     };
   });
 
