@@ -11,12 +11,12 @@ angular.module('paintbrushApp')
   .controller('MainCtrl', function ($scope, current) {
 
     $scope.refreshCurrent = function(){
-        $scope.current = current.query({
+        $scope.current = current.get({
             // title: $scope.title
         });
 
         $scope.current.$promise.then(function(result) {
-        	$scope.current=result;
+        	$scope.current=result; 
         });
         console.log($scope.current);
 // $scope.result = [
@@ -29,3 +29,4 @@ angular.module('paintbrushApp')
     
     };
   });
+
