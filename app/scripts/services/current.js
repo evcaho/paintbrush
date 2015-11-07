@@ -16,9 +16,8 @@ angular.module('paintbrushApp')
     return $resource(
       'https://api.flickr.com/services/rest/',  
       {
-        method: 'flickr.photos.getRecent',
+        method: 'flickr.photos.search',
         api_key: 'af2e9eca76c375ff2ade6f2902acff31',
-        text: location.search,
         format: 'json',
         nojsoncallback: 1
       }

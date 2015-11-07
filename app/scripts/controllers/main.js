@@ -12,13 +12,13 @@ angular.module('paintbrushApp')
 
     $scope.refreshCurrent = function(){
         $scope.current = current.get({
-            // title: $scope.title
+            text: $scope.title
         });
 
         $scope.current.$promise.then(function(result) {
         	$scope.current=result; 
         });
-        console.log($scope.current);
+        console.log($scope.title);
 // $scope.result = [
 //     angular.fromJson(data.resultList[0]),
 //     angular.fromJson(data.resultList[1])
