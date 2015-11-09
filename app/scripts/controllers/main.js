@@ -15,6 +15,10 @@ angular.module('paintbrushApp')
             text: $scope.title
         });
         console.log($scope.title);
+        if (!$localStorage.savedSearch){
+        $localStorage.savedSearch = $scope.title;
+       	}
+
     };
   });
 
