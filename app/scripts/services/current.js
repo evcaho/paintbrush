@@ -1,5 +1,4 @@
 'use strict';
-console.log("Hi");
 /**
  * @ngdoc service
  * @name paintbrushApp.current
