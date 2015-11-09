@@ -9,14 +9,14 @@
  */
 angular.module('paintbrushApp')
   .controller('MainCtrl', function ($scope, current, oldsearches, $localStorage) {
-  	$scope.storage = $localStorage;
+  	$scope.savedSearch = $localStorage.savedSearch; 
     $scope.refreshCurrent = function(){
         $scope.current = current.get({
             text: $scope.title
         });
         console.log($scope.title);
         if (!$localStorage.savedSearch){
-        $localStorage.savedSearch = $scope.title;
+        	$localStorage.savedSearch = $scope.title;
        	}
 
     };
