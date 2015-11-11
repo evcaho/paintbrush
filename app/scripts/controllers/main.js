@@ -13,6 +13,7 @@
   		$localStorage.savedSearch = [];
   	}
   	$scope.savedSearch = $localStorage.savedSearch; 
+  	console.log($scope.savedSearch);
     $scope.refreshCurrent = function(){
     	$localStorage.savedSearch.push($scope.title);
         $scope.current = current.get({
