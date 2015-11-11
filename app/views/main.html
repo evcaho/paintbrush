@@ -15,12 +15,16 @@
         <li ng-repeat="photo in current.photos.photo | limitTo:5">
           {{photo.title}}
          <img src= "https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg" />
+         <a ng-href="" ng-click="saveSearch(title)" class="btn btn-lg btn-primary">Paint with me!</a>
         </li>
       </ul>
     </div>
     <div>
-       <div ng-if="savedSearch">
-      
-    {{savedSearch}}
+      <h3>My Saved Searches</h3>
+        {{savedSearch}} 
+    </div>
+     
+</div>
+
    
 </div>
