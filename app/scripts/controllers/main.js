@@ -14,12 +14,12 @@
   	}
   	$scope.savedSearch = $localStorage.savedSearch; 
   	console.log($scope.savedSearch);
-    $scope.refreshCurrent = function(){
-    	$localStorage.savedSearch.push($scope.title);
+    $scope.refreshCurrent = function(title){
+    	$localStorage.savedSearch.push(title);
         $scope.current = current.get({
-            text: $scope.title
+            text: title
         });
-        console.log($scope.title);
+        console.log(title);
         
 
     };

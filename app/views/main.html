@@ -8,7 +8,7 @@
           </label>
         </p>
         <p>
-          <button class="btn btn-lg btn-primary" id="search" ng-click="refreshCurrent()">Get Your Paintbrush</button>
+          <button class="btn btn-lg btn-primary" id="search" ng-click="refreshCurrent(title)">Get Your Paintbrush</button>
         </p>
     <div>
       <ul>
@@ -21,12 +21,11 @@
       </ul>
     </div>
     <div>
-      <h3>My Saved Searches</h3>
-      <ul>
-        <li ng-repeat ="searchtext in savedSearch track by $index"> <button class="btn btn-lg btn-primary" id="oldsearch">{{searchtext}}</button>
-        </li>
-      </ul>
+      <h3>Previous Searches</h3>
+      <button class="btn btn-lg btn-primary" id="oldsearch" ng-repeat="searchtext in savedSearch track by $index" ng-click="refreshCurrent(searchtext)">{{searchtext}}</button>
+      
     </div>
+
      
 </div>
 
