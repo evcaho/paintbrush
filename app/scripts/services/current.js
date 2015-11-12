@@ -14,7 +14,8 @@ angular.module('paintbrushApp')
         method: 'flickr.photos.search',
         api_key: 'af2e9eca76c375ff2ade6f2902acff31',
         format: 'json',
-        nojsoncallback: 1
+        nojsoncallback: 1,
+        text: 'shapes'
       }
     );
   });
