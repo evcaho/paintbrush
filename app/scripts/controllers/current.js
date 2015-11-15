@@ -10,10 +10,6 @@
 angular.module('paintbrushApp')
   .controller('CurrentCtrl', function ($scope, $routeParams) {
     console.log($routeParams);
-     $scope.imageURL = $routeParams.imageURL;
-
-    $scope.currentImage = current.query({
-        imageURL: $routeParams.imageURL
-    });
-    
+    console.log("https://farm" + $routeParams.farm + ".staticflickr.com/" + $routeParams.server + "/" + $routeParams.id + "_" + $routeParams.secret + ".jpg");
+    $scope.imageURL = "https://farm" + $routeParams.farm + ".staticflickr.com/" + $routeParams.server + "/" + $routeParams.id + "_" + $routeParams.secret + ".jpg";
   });
