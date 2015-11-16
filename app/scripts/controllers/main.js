@@ -21,7 +21,6 @@
         });
         console.log(title);
         
-
     };
   });
 // angular.module('paintbrushApp')
