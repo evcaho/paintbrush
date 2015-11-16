@@ -110,10 +110,18 @@ ul#images li button {
     display: inline-block;
 }
 
+img {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  align: center; 
+}
 
 
 ul#images {
     list-style-type: none;
 }
 
+li { 
+    list-style: none;
+}
 
