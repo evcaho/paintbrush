@@ -18,5 +18,5 @@ angular.module('paintbrushApp')
         text: 'shapes'
       }
     );
-  });
 
+  });

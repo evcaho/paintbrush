@@ -9,7 +9,17 @@
  */
 angular.module('paintbrushApp')
   .controller('CurrentCtrl', function ($scope, $routeParams) {
-    console.log($routeParams);
-    console.log("https://farm" + $routeParams.farm + ".staticflickr.com/" + $routeParams.server + "/" + $routeParams.id + "_" + $routeParams.secret + ".jpg");
     $scope.imageURL = "https://farm" + $routeParams.farm + ".staticflickr.com/" + $routeParams.server + "/" + $routeParams.id + "_" + $routeParams.secret + ".jpg";
+  	$scope.mouseMove = function(event){
+    	console.log(event.offsetX, event.offsetY);
+
+    };
   });
+
+// app.controller('personCtrl', function($scope) {
+//     $scope.firstName = "John";
+//     $scope.lastName = "Doe";
+//     $scope.fullName = function() {
+//         return $scope.firstName + " " + $scope.lastName;
+//     };
+// });

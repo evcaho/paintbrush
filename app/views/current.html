@@ -1,10 +1,12 @@
 
-<h1>Paintbrush with: {{title}}</h1>
+<h1>Paintbrush with:</h1>
+<div ng-mousemove="mouseMove($event)" class="canvas">
 
+
+
+
+</div>
 <img src= "{{imageURL}}" />
-
-
 <div ng-controller="CurrentCtrl">
-  <img src= "https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg" />
-      <a class="btn btn-sm btn-primary" href="#/">New Search </a>
+	<a class="btn btn-sm btn-primary" href="#/">New Search </a>
 </div>
