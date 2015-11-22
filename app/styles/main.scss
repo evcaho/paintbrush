@@ -139,4 +139,15 @@ li {
   width: 800px;
   height: 800px;
   background-color: gray;
+  position: relative;
+
+  img {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
 }
+
+
+

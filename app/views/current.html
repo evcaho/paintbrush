@@ -1,12 +1,8 @@
 
 <h1>Paintbrush with:</h1>
-<div ng-mousemove="mouseMove($event)" class="canvas">
-
-
-
-
+<div ng-mousemove="mouseMove($event)" class="canvas" id="canvas">
+	<img id="cursor" src= "{{imageURL}}" />
 </div>
-<img src= "{{imageURL}}" />
 <div ng-controller="CurrentCtrl">
 	<a class="btn btn-sm btn-primary" href="#/">New Search </a>
 </div>

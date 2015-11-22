@@ -11,15 +11,14 @@ angular.module('paintbrushApp')
   .controller('CurrentCtrl', function ($scope, $routeParams) {
     $scope.imageURL = "https://farm" + $routeParams.farm + ".staticflickr.com/" + $routeParams.server + "/" + $routeParams.id + "_" + $routeParams.secret + ".jpg";
   	$scope.mouseMove = function(event){
-    	console.log(event.offsetX, event.offsetY);
-
+    	var node = document.getElementById("cursor");
+    	node.style.top = "" + event.offsetY + "px";
+    	node.style.left = "" + event.offsetX + "px";
+    	var painting = node.cloneNode();
+    	painting.id = "";
+    	var canvas = document.getElementById("canvas");
+    	console.log(canvas);
+    	canvas.appendChild(painting);
     };
   });
 
-// app.controller('personCtrl', function($scope) {
-//     $scope.firstName = "John";
-//     $scope.lastName = "Doe";
-//     $scope.fullName = function() {
-//         return $scope.firstName + " " + $scope.lastName;
-//     };
-// });
