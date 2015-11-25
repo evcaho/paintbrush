@@ -25,7 +25,7 @@
     <div class = "previous searches">
 
       <h3>Previous 25 Searches:</h3>
-       <button class="btn btn-custom" id="oldsearch" ng-repeat="searchtext in savedSearch | limitTo:25 track by $index" ng-click="refreshCurrent(searchtext)">{{searchtext}}</button>
+       <button class="btn btn-custom" id="oldsearch" ng-repeat="searchtext in savedSearch | limitTo: -25 track by $index" ng-click="refreshCurrent(searchtext)">{{searchtext}}</button>
       
     </div>
 
