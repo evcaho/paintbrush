@@ -17,6 +17,10 @@ body {
   padding: 0;
 }
 
+h1 {
+  padding-bottom: 25px;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -129,6 +133,7 @@ li {
     background-color: #708090;
     margin: 5px;
     line-height:8px;
+    margin-top: 25px;
 }
 
 #paintpic {
@@ -137,9 +142,15 @@ li {
 
 .canvas {
   width: 800px;
-  height: 800px;
-  background-color: gray;
+  height: 600px;
+  background-color: #FFFFCC;
   position: relative;
+
+  box-shadow:
+     0px 0px 0px 2px rgb(210,105,30),
+     0px 0px 0px 20px rgb(184,134,11),
+     0px 0px 0px 24px rgb(210,105,30),
+     6px 6px 8px 17px #555;
 
   img {
     width: 50px;
