@@ -18,7 +18,9 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngStorage',
-    'ngTouch'
+    'ngTouch',
+    'angulartics', 
+    'angulartics.google.analytics'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -42,4 +44,5 @@ angular
         redirectTo: '/'
       });
   });
+
 
