@@ -1,9 +1,0 @@
-current.css
-
-img {
-     max-width: 100px;
-}
-
-.custom {
-   cursor: url({{imageURL}}), auto;
-}
